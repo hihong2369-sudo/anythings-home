@@ -3,229 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anythings - 애니띵즈</title>
+  <title>Anythings Baseball Academy - 애니띵즈 유소년 야구단</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-icon">🦉</span>
+      <a href="#hero" class="nav-logo">
         <span class="logo-text">Anythings</span>
-      </div>
-      <ul class="nav-menu">
+        <span class="logo-sub">BASEBALL ACADEMY</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="#hero">홈</a></li>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#services">서비스</a></li>
-        <li><a href="#portfolio">포트폴리오</a></li>
-        <li><a href="#contact">연락처</a></li>
+        <li><a href="#values">왜 야구인가</a></li>
+        <li><a href="#facility">시설</a></li>
+        <li><a href="#curriculum">커리큘럼</a></li>
+        <li><a href="#gallery">갤러리</a></li>
+        <li><a href="#contact" class="nav-cta">무료 체험 신청</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle">
+      <button class="hamburger" id="hamburger" aria-label="메뉴">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="owl-container">
-        <div class="owl-body">
-          <div class="owl-face">
-            <div class="owl-eyes">
-              <div class="eye left-eye"><div class="pupil"></div></div>
-              <div class="eye right-eye"><div class="pupil"></div></div>
-            </div>
-            <div class="owl-beak"></div>
-          </div>
-          <div class="owl-wings">
-            <div class="wing left-wing"></div>
-            <div class="wing right-wing"></div>
-          </div>
-          <div class="owl-feet">
-            <div class="foot"></div>
-            <div class="foot"></div>
-          </div>
-        </div>
-      </div>
-      <div class="stars">
-        <div class="star"></div><div class="star"></div><div class="star"></div>
-        <div class="star"></div><div class="star"></div><div class="star"></div>
-        <div class="star"></div><div class="star"></div><div class="star"></div>
-        <div class="star"></div>
-      </div>
-    </div>
+    <div class="hero-bg-overlay"></div>
     <div class="hero-content">
-      <p class="hero-sub">바탕화면 올빼미가 만드는</p>
-      <h1 class="hero-title"><span class="gradient-text">Anything</span>s</h1>
-      <p class="hero-desc">무엇이든 가능합니다. 아이디어를 현실로, 꿈을 코드로.<br />우리는 당신의 모든 것을 만들어냅니다.</p>
-      <div class="hero-btns">
-        <a href="#about" class="btn btn-primary">더 알아보기</a>
-        <a href="#portfolio" class="btn btn-outline">작업물 보기</a>
+      <div class="hero-badge">화성 병점 · 수원대학교 야구장 사용</div>
+      <h1 class="hero-title">아이의 <span class="highlight">모든 가능성</span>을<br/>야구로 깨웁니다</h1>
+      <p class="hero-subtitle">체형 교정 · 두뇌 발달 · 팀워크 · 자신감<br/>유소년 성장의 모든 것을 담은 <strong>애니띵즈 야구 아카데미</strong></p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">무료 체험 신청하기</a>
+        <a href="#values" class="btn btn-secondary">더 알아보기</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">300<small>평</small></span><span class="stat-label">최첨단 실내 시설</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">대학교<small>구장</small></span><span class="stat-label">수원대 야구장 사용</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">전담<small>코치</small></span><span class="stat-label">전문가 지도</span></div>
       </div>
     </div>
-    <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+    <div class="hero-image-grid">
+      <div class="hero-img hero-img-1"><img src="images/indoor1.jpg" alt="실내 훈련" /></div>
+      <div class="hero-img hero-img-2"><img src="images/team1.jpg" alt="팀원들" /></div>
+      <div class="hero-img hero-img-3"><img src="images/field1.jpg" alt="야구장" /></div>
+    </div>
   </section>
-
-  <section class="about" id="about">
+  <section class="values" id="values">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">About Us</span>
-        <h2 class="section-title">우리는 <span class="highlight">애니띵즈</span>입니다</h2>
-        <p class="section-desc">창의적인 아이디어와 탄탄한 기술력으로 최고의 결과물을 만들어냅니다</p>
+        <span class="section-tag">WHY BASEBALL</span>
+        <h2>야구가 아이에게 주는 <span class="highlight">특별한 선물</span></h2>
+        <p>발레가 체형 교정을 만들듯, 야구는 아이의 신체와 정신 모두를 성장시킵니다</p>
       </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="card-icon">🎨</div>
-          <h3>창의적 디자인</h3>
-          <p>사용자 중심의 아름답고 직관적인 디자인으로 최고의 경험을 선사합니다.</p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">💻</div>
-          <h3>탄탄한 개발</h3>
-          <p>최신 기술 스택을 활용해 안정적이고 확장 가능한 서비스를 구축합니다.</p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">🚀</div>
-          <h3>빠른 실행력</h3>
-          <p>아이디어 단계부터 출시까지 신속하고 효율적인 프로세스로 진행합니다.</p>
-        </div>
-        <div class="about-card">
-          <div class="card-icon">🌙</div>
-          <h3>밤을 밝히는 열정</h3>
-          <p>올빼미처럼 밤에도 활동하며 여러분의 프로젝트에 헌신합니다.</p>
-        </div>
+      <div class="values-grid">
+        <div class="value-card"><div class="value-icon">⚾</div><h3>전신 체형 교정</h3><p>투구·타격·수비의 정확한 자세 훈련이 척추 균형과 어깨·골반의 좌우 대칭을 잡아줍니다. 성장기 바른 체형의 기초를 만듭니다.</p></div>
+        <div class="value-card value-card-featured"><div class="value-icon">🧠</div><h3>두뇌 &amp; 판단력 발달</h3><p>타자의 구종 예측, 수비 위치 판단 등 야구의 모든 순간이 빠른 사고와 전략적 판단력을 키웁니다. 학습 능력과 집중력이 함께 성장합니다.</p></div>
+        <div class="value-card"><div class="value-icon">🏃</div><h3>폭발적 운동능력</h3><p>순간 가속, 민첩성, 유연성, 코어 근력을 동시에 키우는 야구 특화 체력 훈련. 모든 스포츠의 기반이 되는 기초 체력을 완성합니다.</p></div>
+        <div class="value-card"><div class="value-icon">🤝</div><h3>팀워크 &amp; 리더십</h3><p>9명이 하나로 움직이는 팀 스포츠. 서로를 응원하고 역할을 나누며 사회성과 배려심, 자연스러운 리더십이 길러집니다.</p></div>
+        <div class="value-card"><div class="value-icon">💪</div><h3>자신감과 정신력</h3><p>실패를 극복하고 다시 일어서는 경험. 삼진아웃을 이겨내는 과정이 강인한 정신력과 도전 정신을 가르칩니다.</p></div>
+        <div class="value-card"><div class="value-icon">🎯</div><h3>집중력 &amp; 창의성</h3><p>수비 위치, 전술적 선택 등 야구의 무한한 경우의 수가 아이의 창의적 사고와 깊은 집중력을 자연스럽게 개발합니다.</p></div>
       </div>
     </div>
   </section>
-
-  <section class="services" id="services">
+  <section class="compare-section">
+    <div class="container">
+      <div class="compare-card">
+        <div class="compare-inner">
+          <div class="compare-col"><h3>발레 · 무용</h3><ul><li>✓ 체형 교정</li><li>✓ 유연성 향상</li><li>✓ 집중력 향상</li><li>✓ 예술적 감수성</li></ul></div>
+          <div class="compare-vs">VS</div>
+          <div class="compare-col compare-col-featured"><h3>애니띵즈 야구</h3><ul><li>✓ 체형 교정 + 근골격 강화</li><li>✓ 전신 운동능력 발달</li><li>✓ 집중력 + 전략적 사고</li><li>✓ 팀워크 + 리더십</li><li>✓ 자신감 + 정신력</li><li>✓ 두뇌 발달</li></ul><div class="compare-badge">MORE VALUE</div></div>
+        </div>
+        <p class="compare-note">야구는 예체능의 가치를 넘어, 아이의 전인적 성장을 완성합니다</p>
+      </div>
+    </div>
+  </section>
+  <section class="facility" id="facility">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Services</span>
-        <h2 class="section-title">제공하는 <span class="highlight">서비스</span></h2>
+        <span class="section-tag">OUR FACILITY</span>
+        <h2>최고의 환경에서 <span class="highlight">최고의 훈련</span>을</h2>
+        <p>300평 실내 훈련장 + 수원대학교 정규 야구장 - 프로와 동일한 환경</p>
       </div>
-      <div class="services-list">
-        <div class="service-item">
-          <div class="service-num">01</div>
-          <div class="service-info">
-            <h3>웹사이트 제작</h3>
-            <p>반응형 웹사이트, 랜딩페이지, 기업 홈페이지 등 모든 형태의 웹을 만들어드립니다.</p>
-          </div>
-          <div class="service-arrow">→</div>
+      <div class="facility-grid">
+        <div class="facility-main"><img src="images/indoor2.jpg" alt="실내 훈련장" /><div class="facility-overlay"><h3>300평 프리미엄 실내 훈련장</h3><p>화성 병점 · 전천후 실내 훈련 가능</p></div></div>
+        <div class="facility-side">
+          <div class="facility-item"><img src="images/field2.jpg" alt="수원대 야구장" /><div class="facility-overlay"><h3>수원대학교 야구장</h3><p>실제 경기장에서의 실전 훈련</p></div></div>
+          <div class="facility-item"><img src="images/field3.jpg" alt="외야 훈련" /><div class="facility-overlay"><h3>봄 정규 야구장 훈련</h3><p>아름다운 자연 속 야외 훈련</p></div></div>
         </div>
-        <div class="service-item">
-          <div class="service-num">02</div>
-          <div class="service-info">
-            <h3>앱 개발</h3>
-            <p>iOS/Android 크로스플랫폼 앱부터 네이티브 앱까지 다양한 모바일 서비스를 구현합니다.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item">
-          <div class="service-num">03</div>
-          <div class="service-info">
-            <h3>UI/UX 디자인</h3>
-            <p>사용자 리서치부터 프로토타이핑, 최종 디자인까지 전 과정을 담당합니다.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
-        <div class="service-item">
-          <div class="service-num">04</div>
-          <div class="service-info">
-            <h3>브랜딩</h3>
-            <p>로고, 브랜드 아이덴티티, 마케팅 자료 등 브랜드의 모든 것을 디자인합니다.</p>
-          </div>
-          <div class="service-arrow">→</div>
-        </div>
+      </div>
+      <div class="facility-features">
+        <div class="ffeature"><span>🏟️</span> 300평 실내 인조잔디</div>
+        <div class="ffeature"><span>🎯</span> 피칭머신 다수 보유</div>
+        <div class="ffeature"><span>⚡</span> PLYO 트레이닝 장비</div>
+        <div class="ffeature"><span>🏃</span> 스피드 훈련 장비</div>
+        <div class="ffeature"><span>📺</span> 영상 분석 시스템</div>
+        <div class="ffeature"><span>🌿</span> 수원대 정규 야구장</div>
       </div>
     </div>
   </section>
-
-  <section class="portfolio" id="portfolio">
+  <section class="curriculum" id="curriculum">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title">작업 <span class="highlight">포트폴리오</span></h2>
+        <span class="section-tag">CURRICULUM</span>
+        <h2>연령별 <span class="highlight">맞춤 커리큘럼</span></h2>
+        <p>유아부터 초등까지, 성장 단계에 맞는 전문 프로그램</p>
       </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#667eea,#764ba2)"><span class="portfolio-emoji">🏫</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">Web</span><h3>Registration</h3><p>학교 수강신청 시스템 웹 서비스</p></div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><span class="portfolio-emoji">👟</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">Web</span><h3>Anythings Uniform</h3><p>교복 및 유니폼 쇼핑몰 플랫폼</p></div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"><span class="portfolio-emoji">🏋️</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">App</span><h3>NaCoach</h3><p>나만의 AI 피트니스 코치 앱</p></div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"><span class="portfolio-emoji">🎵</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">App</span><h3>Honk</h3><p>음악 스트리밍 소셜 플랫폼</p></div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#fa709a,#fee140)"><span class="portfolio-emoji">📚</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">Web</span><h3>Sequence</h3><p>순차적 학습 관리 플랫폼</p></div>
-        </div>
-        <div class="portfolio-item coming">
-          <div class="portfolio-thumb" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><span class="portfolio-emoji">✨</span></div>
-          <div class="portfolio-info"><span class="portfolio-tag">Coming Soon</span><h3>Next Project</h3><p>새로운 프로젝트가 곧 공개됩니다</p></div>
-        </div>
+      <div class="curriculum-tabs">
+        <div class="curri-card"><div class="curri-age">유아부 (5~7세)</div><h3>야구 놀이 &amp; 기초 운동</h3><ul><li>공 잡기 · 던지기 기초</li><li>전신 조정력 발달 운동</li><li>팀 놀이를 통한 사회성 발달</li><li>즐거운 야구 첫 경험</li></ul><div class="curri-tag">주 2~3회</div></div>
+        <div class="curri-card curri-featured"><div class="curri-badge">POPULAR</div><div class="curri-age">초등 저학년 (1~3학년)</div><h3>기초 기술 + 체력 훈련</h3><ul><li>정확한 투구 · 타격 폼 교정</li><li>수비 포지션별 기초 훈련</li><li>민첩성 · 코어 근력 훈련</li><li>팀 게임 &amp; 실전 경험</li><li>영상 분석을 통한 자세 교정</li></ul><div class="curri-tag">주 3~4회</div></div>
+        <div class="curri-card"><div class="curri-age">초등 고학년 (4~6학년)</div><h3>심화 기술 + 전술 훈련</h3><ul><li>포지션 특화 집중 훈련</li><li>배팅 파워 &amp; 투구 스피드 향상</li><li>경기 전술 &amp; 상황별 판단력</li><li>대회 참가 실전 준비</li></ul><div class="curri-tag">주 4~5회</div></div>
       </div>
     </div>
   </section>
-
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GALLERY</span>
+        <h2>애니띵즈의 <span class="highlight">생생한 현장</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-large"><img src="images/team1.jpg" alt="팀 훈련" /></div>
+        <div class="gallery-item"><img src="images/indoor1.jpg" alt="실내 훈련" /></div>
+        <div class="gallery-item"><img src="images/indoor2.jpg" alt="아카데미 훈련" /></div>
+        <div class="gallery-item"><img src="images/field1.jpg" alt="수원대 야구장" /></div>
+        <div class="gallery-item g-large"><img src="images/field3.jpg" alt="봄 야구장" /></div>
+      </div>
+    </div>
+  </section>
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">함께 <span class="highlight">시작해요</span></h2>
-        <p class="section-desc">프로젝트 의뢰, 협업 제안, 궁금한 점 무엇이든 연락 주세요!</p>
-      </div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">📧</div>
-            <div><h4>이메일</h4><p>hi.hong2369@gmail.com</p></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🐙</div>
-            <div><h4>GitHub</h4><p>github.com/hihong2369-sudo</p></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🦉</div>
-            <div><h4>팀 이름</h4><p>바탕화면 올빼미 (Desktop Owl)</p></div>
+      <div class="contact-inner">
+        <div class="contact-text">
+          <span class="section-tag">JOIN US</span>
+          <h2>아이의 <span class="highlight">첫 번째 홈런</span>을<br/>함께 만들어요</h2>
+          <p>무료 체험 수업으로 애니띵즈를 직접 경험해보세요.<br/>전문 코치가 아이의 수준에 맞게 안내해드립니다.</p>
+          <div class="contact-info-list">
+            <div class="cinfo"><span>📍</span> 경기도 화성시 병점동</div>
+            <div class="cinfo"><span>🏟️</span> 수원대학교 야구장 사용</div>
+            <div class="cinfo"><span>📞</span> 문의 주시면 상담 안내</div>
           </div>
         </div>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-group"><input type="text" placeholder="이름" required /></div>
-          <div class="form-group"><input type="email" placeholder="이메일" required /></div>
-          <div class="form-group"><input type="text" placeholder="프로젝트 제목" /></div>
-          <div class="form-group"><textarea placeholder="메시지를 입력해주세요..." rows="5" required></textarea></div>
-          <button type="submit" class="btn btn-primary btn-full">메시지 보내기 🦉</button>
-        </form>
+        <div class="contact-form-box">
+          <h3>무료 체험 신청</h3>
+          <form class="contact-form" id="contact-form">
+            <input type="text" placeholder="아이 이름" required />
+            <input type="text" placeholder="나이 (학년)" required />
+            <input type="tel" placeholder="연락처" required />
+            <select><option value="">희망 프로그램 선택</option><option>유아부 (5~7세)</option><option>초등 저학년 (1~3학년)</option><option>초등 고학년 (4~6학년)</option></select>
+            <textarea placeholder="문의사항 (선택)"></textarea>
+            <button type="submit" class="btn btn-primary btn-full">무료 체험 신청하기 →</button>
+          </form>
+          <p class="form-note">* 신청 후 24시간 내 연락드립니다</p>
+        </div>
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="logo-icon">🦉</span>
-          <span class="logo-text">Anythings</span>
-        </div>
-        <p class="footer-tagline">무엇이든 가능합니다 — 바탕화면 올빼미</p>
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="logo-text">Anythings</span><span class="logo-sub">BASEBALL ACADEMY</span><p>무엇이든 가능합니다.<br/>아이의 가능성을 야구로 펼쳐드립니다.</p></div>
+        <div class="footer-links"><h4>바로가기</h4><a href="#values">왜 야구인가</a><a href="#facility">시설 안내</a><a href="#curriculum">커리큘럼</a><a href="#contact">무료 체험 신청</a></div>
+        <div class="footer-contact"><h4>찾아오시는 길</h4><p>📍 경기도 화성시 병점동</p><p>🏟️ 수원대학교 야구장</p><p>TRAIN HARD · STAY HUMBLE · BE ANYTHINGS</p></div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Anythings - 바탕화면 올빼미. All rights reserved.</p>
-      </div>
+      <div class="footer-bottom"><p>© 2025 Anythings Baseball Academy. All rights reserved.</p></div>
     </div>
   </footer>
-
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
